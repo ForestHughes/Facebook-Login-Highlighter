@@ -1,0 +1,15 @@
+{
+  "name": "Login Highlight.",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["jquery-2.1.4.min.js", "myapp.js"],
+            "run_at": "document_end"
+        }
+    ],
+  "manifest_version": 2
+} 
